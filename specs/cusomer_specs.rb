@@ -26,19 +26,19 @@ class TestCustomer < MiniTest::Test
     assert_equal(33, @customer.age)
   end
 
-  # def test_pay_for_drink
-  #   @customer.pay_for_drink(@drink1.price)
-  #   assert_equal(5, @customer.wallet)
-  # end
+  def test_pay_for_drink
+    @customer.pay_for_drink(@drink1.price)
+    assert_equal(5, @customer.wallet)
+  end
 
   def test_return_drunkeness_level
     assert_equal(0, @customer.drunkeness)
   end
 
-  # def test_increase_drunkeness
-  #   @customer.increase_drunkeness(@drink1.units)
-  #   assert_equal(2, @customer.drunkeness)
-  # end
+  def test_increase_drunkeness
+    @customer.increase_drunkeness(@drink1.units)
+    assert_equal(2, @customer.drunkeness)
+  end
 
 
 end

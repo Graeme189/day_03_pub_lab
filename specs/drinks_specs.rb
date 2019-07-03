@@ -8,6 +8,11 @@ require_relative('../drinks.rb')
 class TestDrinks < MiniTest::Test
   def setup
     @drink1 = Drinks.new('IPA', 5, 2)
+
+    @stock = Drinks.new(
+      {name: "IPA", price: 5},
+      {name: "Wine", price: 8},
+    )
   end
 
   def test_name_and_price_of_drink

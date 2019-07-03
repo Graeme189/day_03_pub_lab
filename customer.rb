@@ -18,6 +18,9 @@ def increase_drunkeness(units)
   @drunkeness += units
 end
 
+def sobering_up(calories)
+  @drunkeness -= calories
+end
 
 
 

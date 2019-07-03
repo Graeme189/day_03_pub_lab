@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
 class Drinks
-  attr_reader :name, :price, :units
+  attr_reader :name, :price,
 
-  def initialize(name, price, units)
+  def initialize(name, price)
     @name = name
     @price = price
-    @units = units
+    # @units = units
   end
 end

@@ -27,18 +27,14 @@ class Pub
   # end
 
   def check_customer_age(age)
-    if age >= 18
-      'Come on in!'
-    else
-      'Beat it pal!'
-    end
+     age >= 18
   end
 
   def check_customer_drunkeness(sobriety)
-    if sobriety > 10
-      "You've had too much pal!"
-    else
-      'What you having?'
-    end
+   sobriety > 10
   end
+
+  def sell_food(price)
+    @till += price
+  end 
 end
